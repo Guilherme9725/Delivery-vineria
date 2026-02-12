@@ -557,7 +557,7 @@
                     <div class="product-info">
                         <div class="wine-tags">${produto.pais} • ${produto.uva}</div>
                         <h3 class="product-title">${produto.nome}</h3>
-
+                        
                         <div class="wine-details">
                             <div class="detail-item"><i class="fas fa-globe-americas"></i> ${produto.pais}</div>
                             <div class="detail-item"><i class="fas fa-wine-bottle"></i> ${produto.uva}</div>
@@ -576,7 +576,7 @@
 
         searchInput.addEventListener('input', (e) => {
             const termo = e.target.value.toLowerCase();
-
+            
             const produtosFiltrados = produtos.filter(produto => {
                 return produto.nome.toLowerCase().includes(termo) || 
                        produto.uva.toLowerCase().includes(termo) ||
@@ -601,7 +601,7 @@
                 carrinho.push({ ...produto, quantidade: 1 });
             }
             atualizarCarrinho();
-            abrirCarrinho();
+            // abrirCarrinho();  <-- ESSA LINHA FOI REMOVIDA PARA O CARRINHO NÃO ABRIR SOZINHO
         }
 
         function removerDoCarrinho(id) {
