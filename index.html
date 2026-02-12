@@ -447,87 +447,133 @@
     <script>
         // --- 1. Dados dos Vinhos ---
         const produtos = [
-            {
-                id: 1,
+            
+                {id: 1,
                 nome: "DV Catena 2023",
                 preco: 189.90,
                 pais: "Argentina",
                 uva: "Cabernet sauvignon/ Malbec",
                 harmonizacao: "Carnes vermelhas e queijos curados",
-                img: "https://www.mistral.com.br/_next/image?url=https%3A%2F%2Fcdn.mistral.com.br%2Fproducts%2F39519%2Fimg_h_39519.png%3Fv%3D20260211_145551&w=750&q=75"
-            },
-            {
-                id: 2,
+                img: "https://www.mistral.com.br/_next/image?url=https%3A%2F%2Fcdn.mistral.com.br%2Fproducts%2F39519%2Fimg_h_39519.png%3Fv%3D20260211_145551&w=750&q=75"},
+         
+            
+             {id: 2,
                 nome: "Angelica Zapata ",
                 preco: 249.90,
                 pais: "Argentina",
                 uva: "Malbec Alta",
                 harmonizacao: "Churrasco",
-                img: "https://cdn.mistral.com.br/products/39116/360/39116_1.png?v=20260211_143857"
-            },
-            {
-                id: 3,
+                img: "https://cdn.mistral.com.br/products/39116/360/39116_1.png?v=20260211_143857"},
+
+           
+                {id: 3,
                 nome: "Alamos",
                 preco: 110.00,
                 pais: "Argentina",
                 uva: "Malbec",
                 harmonizacao: "Carne Vermelha e massas condimentadas",
-                img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSkXHYr-WggEK9d5uN-hvi2Q8_eytQHcQWb-OvAuCz0VTwzZz_tCFzMI5HDlt56QqsHPlYrarAWiK2osawZ2P4Cc9nMFpaevErbQ8kzKHMSgINpxdeKDSpXrQ"
-            },
-            {
-                id: 4,
+                img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSkXHYr-WggEK9d5uN-hvi2Q8_eytQHcQWb-OvAuCz0VTwzZz_tCFzMI5HDlt56QqsHPlYrarAWiK2osawZ2P4Cc9nMFpaevErbQ8kzKHMSgINpxdeKDSpXrQ"},
+            
+            
+               { id: 4,
                 nome: "Alamos",
                 preco: 110.00,
                 pais: "Argentina",
                 uva: "Cabernet sauvignon",
                 harmonizacao: "Churrasco , carne grelhada",
-                img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSkXHYr-WggEK9d5uN-hvi2Q8_eytQHcQWb-OvAuCz0VTwzZz_tCFzMI5HDlt56QqsHPlYrarAWiK2osawZ2P4Cc9nMFpaevErbQ8kzKHMSgINpxdeKDSpXrQ"
-            },
-            {
-                id: 5,
+               img: "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSkXHYr-WggEK9d5uN-hvi2Q8_eytQHcQWb-OvAuCz0VTwzZz_tCFzMI5HDlt56QqsHPlYrarAWiK2osawZ2P4Cc9nMFpaevErbQ8kzKHMSgINpxdeKDSpXrQ"},
+            
+            
+               { id: 5,
                 nome: "Nicasia",
                 preco: 120.00,
                 pais: "Argentina",
                 uva: "Malbec, cabernet e petit verdot",
                 harmonizacao: "Carne de porco , cordeiro",
-                img: "https://http2.mlstatic.com/D_NQ_NP_2X_740719-MLB104035918398_012026-F.webp"
-            },
-            {
-                id: 6,
+                img: "https://http2.mlstatic.com/D_NQ_NP_2X_740719-MLB104035918398_012026-F.webp"},
+    
+            
+               { id: 6,
                 nome: "La Flor Pulenta ",
                 preco: 190.00,
                 pais: "Argentina",
                 uva: "Malbec",
                 harmonizacao: "Queijos curados ou maturados ",
-                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKDvGGeC5b6Tk6o9HfQG0YrMt4i0fMWu7Pg&s"
-            },
- {
-                id: 7,
+                img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnKDvGGeC5b6Tk6o9HfQG0YrMt4i0fMWu7Pg&s"},
+            
+               { id: 7,
                 nome: "Don Nicolas ",
                 preco: 59.00,
                 pais: "Argentina",
                 uva: "Chardonnay",
                 harmonizacao: "Peixes e frutos do mar ",
-                img: "https://delvigorvinho.com/wp-content/uploads/2025/08/Design-sem-nome-57-600x600.png"
-            },
- {
-                id: 8,
+                img: "https://delvigorvinho.com/wp-content/uploads/2025/08/Design-sem-nome-57-600x600.png"},
+            
+ 
+               { id: 8,
                 nome: "Don Nicolas ",
                 preco: 59.00,
                 pais: "Argentina",
                 uva: "Malbec",
                 harmonizacao: "Carnes vermelhas grelhadas ou assadas",
-                img: "https://images.openai.com/thumbnails/url/J2O9OnicDcltCoIwAADQE6lTK02IUNCmYKilov9ymx-D5tyG2XW6Vbep9_d9P6NSXHqGQRgSb64I1lTHTH2Q6qEmpKP5achx5nxiw3k5_c_zr_h4QXkJS5j7UmQvG1SNs4HeDYJJtUN8o7BOimqNYJNhU4C9XYVlD4pwJIdO24SmqumeLttK_QTXO-ISjdYZprGoc1YKh6YALn1MkdWyMLJ-D_85Aw"
-            },
- {
-                id: 9,
+                img: "https://images.openai.com/thumbnails/url/J2O9OnicDcltCoIwAADQE6lTK02IUNCmYKilov9ymx-D5tyG2XW6Vbep9_d9P6NSXHqGQRgSb64I1lTHTH2Q6qEmpKP5achx5nxiw3k5_c_zr_h4QXkJS5j7UmQvG1SNs4HeDYJJtUN8o7BOimqNYJNhU4C9XYVlD4pwJIdO24SmqumeLttK_QTXO-ISjdYZprGoc1YKh6YALn1MkdWyMLJ-D_85Aw"},
+            
+ 
+                {id: 9,
                 nome: "Don Nicolas ",
                 preco: 59.00,
                 pais: "Argentina",
                 uva: "Cabernet Sauvignon",
                 harmonizacao: "Lasanha e pratos gratinados",
-                img: "https://images.openai.com/thumbnails/url/NF3kDXicDcnJDYJAFADQitgXkcQYFEQQiQsC8UJgWAU-o8wkSFW2Yzf6ru_7qQnBo85xBaDXG5MiZ0gGPFuNJCUNYtHQc2M9YNxAtX6u_qcbfr60UZBr20raYwku_clWbUEE5MbUTOabeW2HKfDannqxrARqnVgLvtxkfNT497HTLMd6yOAyyJggnfLIyQSmjER53hW8GB7JjNzDecqoJIeKQtQuNo4-gAW2Q6nxA1JNPYA"
-            },
+                img: "https://images.openai.com/thumbnails/url/NF3kDXicDcnJDYJAFADQitgXkcQYFEQQiQsC8UJgWAU-o8wkSFW2Yzf6ru_7qQnBo85xBaDXG5MiZ0gGPFuNJCUNYtHQc2M9YNxAtX6u_qcbfr60UZBr20raYwku_clWbUEE5MbUTOabeW2HKfDannqxrARqnVgLvtxkfNT497HTLMd6yOAyyJggnfLIyQSmjER53hW8GB7JjNzDecqoJIeKQtQuNo4-gAW2Q6nxA1JNPYA"},
+             
+               { id: 10,
+                nome: "Levity Rosé Vinho verde",
+                preco: 65.00,
+                pais: "Portugal",
+                uva: "Blend",
+                harmonizacao: "Frios, pizza marguerita,camarão",
+                img: "https://http2.mlstatic.com/D_NQ_NP_2X_722861-MLA99421498216_112025-F.webp"},
+  
+
+               { id: 11,
+                nome: "Ventiqueiro Clássico",
+                preco: 65.00,
+                pais: "Chile",
+                uva: "Sauvignon Blanc",
+                harmonizacao: "Camarão, Sushi e sashimi",
+                img: "https://cdn11.bigcommerce.com/s-eb2m0fdvaq/images/stencil/1280x1280/products/1555/9036/NSWW100048_VENTISQUERO_SAUVIGNON_BLANC_CLASICO-FrontWS__35994.1753967514.png?c=1"},
+                { id: 11,
+                nome: "Ventisqueiro Clássico",
+                preco: 65.00,
+                pais: "Chile",
+                uva: "Chardonnay",
+                harmonizacao: "Frango assado,Mussarela, brie, frutos do mar",
+                img: "https://www.triplevino.com.br/image/cache/catalog/vinhos/branco/classico-chard-ventis-1000x1000.jpg"},
+                
+                { id: 12,
+                nome: "Santa Angelica",
+                preco: 64.00,
+                pais: "Chile",
+                uva: "Sauvignon Blanc",
+                harmonizacao: "Peixes brancos (tilápia, pescada)",
+                img: "https://http2.mlstatic.com/D_NQ_NP_2X_997975-MLA99370972022_112025-F.webp"},
+              
+               {id: 13,
+                nome: "Bons Ventos Fresh Rose ",
+                preco: 75.00,
+                pais: "Portugal",
+                uva: "Blend  ",
+                harmonizacao: "Pizza marguerita ou calabresa,Peixe leve",
+                img: "https://vivavinho.vtexassets.com/arquivos/ids/165135/rose-portugues-quinta-de-bons-ventos-fresh-vivavinho.png?v=638727182429230000"},
+                
+               {id: 14,
+                nome: "Bons Ventos Fresh Branco ",
+                preco: 75.00,
+                pais: "Portugal",
+                uva: "Blend  ",
+                harmonizacao: "Tábua de frios leves, frutos do mar",
+                img: "https://carrefourbr.vtexassets.com/arquivos/ids/192749013/image-0.jpg?v=638845578510000000"},
         ];
 
         // --- 2. Renderização e Pesquisa ---
